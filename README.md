@@ -1,0 +1,5 @@
+This script is designed to analyze EGNOS Type 26 messages. Path to files needs to be specified at the beginning of the script, files need to be firstly transformed from .ems to .txt due to Matlab constraints. Files are loaded, filtered for desired message type and then analyzed. At the end, two scatter charts are displayed for GIVEI and vertical delay values. IGP ranges are adjusted for EGNOS reach, this can be changed in band and block specifications.
+
+Due to memory overload, each five one-hour-long files are loaded and analyzed at a time, respective tables and arrays are then cleared, results are pushed in resulting table which is then used for plotting.
+
+The script basis can be used for analyzing every message type, bit ranges for each characteristics just need to be changed according to RTCA DO-229D together with appropriate outputs.
